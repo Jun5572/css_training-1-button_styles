@@ -1,0 +1,78 @@
+.answer .contents .button {
+  display: inline-block;
+  padding: 15px 40px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+
+/* button_1 */
+.answer .float:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* button_2 */
+.answer .filled {
+  background-color:black;
+  color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.answer .filled:hover {
+  background-color: white;
+  color: black;
+  box-shadow: none;
+}
+
+/* bbutton_3 */
+.answer .letter-spacing:hover {
+  letter-spacing: 3px;
+  background-color: black;
+  color: white;
+}
+
+/* button_4 */
+.answer .shadow:hover {
+  box-shadow: 5px 5px 0 black;
+  transform: translate(-5px, -5px);
+}
+
+/* button_5 */
+.answer .solid {
+  border-radius: 8px;
+  box-shadow: 3px 3px 0 black;
+}
+.answer .solid:hover {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+
+/* challenge button_6 */
+.answer .cover-slide {
+  position: relative;
+  z-index:10;
+  overflow: hidden;
+}
+
+.answer .cover-slide:hover {
+  color: white;
+}
+
+.answer .cover-slide span {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  z-index:-10;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform: translateX(-100%);
+  transition: transform 0.3s;
+}
+
+.answer .cover-slide:hover span{
+  transform: translateX(0);
+}
