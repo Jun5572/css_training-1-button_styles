@@ -15,6 +15,7 @@ p {
 .container {
   display: flex;
   width: 90%;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 20px 0;
   flex-direction: row;
@@ -95,7 +96,6 @@ p {
   font-size: 0.8rem;
   font-weight: 500;
   opacity: 0;
-  /* transform: rotateZ(13deg); */
   transition: all 0.2s;
 }
 
@@ -120,7 +120,8 @@ p {
     display: none;
   }
 
-  .hint {
+  .hint,
+  .hint-text {
     display: none;
   }
 }
