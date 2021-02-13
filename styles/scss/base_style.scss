@@ -148,23 +148,25 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .container {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-
-    & .description {
+  .container__outer {
+    & .container {
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+  
+      & .description {
+        display: none;
+      }
+    }
+  
+    & .separator {
       display: none;
     }
-  }
-
-  .separator {
-    display: none;
-  }
-
-  .hint,
-  .hint-text {
-    display: none;
+  
+    & .hint,
+    & .hint-text {
+      display: none;
+    }
   }
 }
 

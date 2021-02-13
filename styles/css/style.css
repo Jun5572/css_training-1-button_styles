@@ -163,19 +163,19 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .container {
+  .container__outer .container {
     width: 100%;
     display: block;
     margin: 0 auto;
   }
-  .container .description {
+  .container__outer .container .description {
     display: none;
   }
-  .separator {
+  .container__outer .separator {
     display: none;
   }
-  .hint,
-  .hint-text {
+  .container__outer .hint,
+  .container__outer .hint-text {
     display: none;
   }
 }
