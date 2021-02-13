@@ -1,0 +1,177 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  margin: 10px 0 5px;
+}
+
+body {
+  font-family: "Helvetica Neue", "M PLUS Rounded 1c", sans-serif;
+  color: $cText;
+}
+
+.container__outer {
+  background-color: $cOuter-bg;
+  min-height: 100vh;
+
+  & .container {
+    position: relative;
+    display: flex;
+    width: 90%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 20px 0;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $cMain-bg;
+
+    & .separator {
+      width: 1px;
+      background-color: $cBlack;
+    }
+
+    & .inner-header {
+      margin-bottom: 40px;
+
+      & .title {
+        display: inline-block;
+        width: 80%;
+        padding: 5px;
+        border-radius: 100px;
+        background: $cHeader;
+        font-size: 2rem;
+        font-weight: 100;
+        letter-spacing: 3px;
+      }
+
+      & .sub-title {
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+    }
+
+
+    & .contents {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0;
+      align-items: center;
+
+      & button {
+        letter-spacing: 1px;
+      }
+    }
+
+    & .challenge {
+      position: relative;
+
+      & p {
+        color: $cChallenge;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+
+      & .hint {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        color: #3b3b3b;
+        background: $cHeader;
+        font-size: 0.6rem;
+        line-height: 35px;
+        cursor: pointer;
+
+        &:hover {
+          & + .hint-text {
+            opacity: 1;
+          }
+        }
+      }
+
+      & .hint-text {
+        position: absolute;
+        top: -40px;
+        right: -150px;
+        padding: 3px 20px;
+        background: $cHeader;
+        border-radius: 50px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-align: left;
+        opacity: 0;
+        transition: all 0.2s;
+      }
+    }
+
+    & .description {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -40%);
+      width: 360px;
+      background: $cWhite;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+
+      &__wrapper {
+        position: relative;
+        padding: 20px;
+
+        & p {
+          font-family: "M PLUS Rounded 1c";
+        }
+      }
+
+      &__title {
+        position: relative;
+        padding-left: 1em;
+      }
+
+      &__title:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 0.8em;
+        height: 100%;
+        background-color: #0dd8f3;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+
+    & .description {
+      display: none;
+    }
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .hint,
+  .hint-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    & .description {
+      display: none;
+    }
+  }
+}

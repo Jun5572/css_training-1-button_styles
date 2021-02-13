@@ -1,0 +1,98 @@
+.answer {
+  width: 100%;
+  text-align: center;
+  margin: 10px auto 20px;
+}
+
+.answer .contents .button {
+  display: inline-block;
+  padding: 15px 40px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  border-radius: 0;
+  border: 1px solid black;
+  background-color: white;
+  font-weight: 100;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  outline: none;
+}
+
+.answer .contents .float:hover {
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.answer .contents .filled {
+  background-color: black;
+  color: white;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.answer .contents .filled:hover {
+  background-color: white;
+  color: black;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.answer .contents .letter-spacing:hover {
+  letter-spacing: 3px;
+  background-color: black;
+  color: white;
+}
+
+.answer .contents .shadow:hover {
+  -webkit-box-shadow: 5px 5px 0 black;
+          box-shadow: 5px 5px 0 black;
+  -webkit-transform: translate(-5px, -5px);
+          transform: translate(-5px, -5px);
+}
+
+.answer .contents .solid {
+  border-radius: 8px;
+  -webkit-box-shadow: 3px 3px 0 black;
+          box-shadow: 3px 3px 0 black;
+}
+
+.answer .contents .solid:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translate(3px, 3px);
+          transform: translate(3px, 3px);
+}
+
+.answer .contents .cover-slide {
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.answer .contents .cover-slide:hover {
+  color: white;
+}
+
+.answer .contents .cover-slide span {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.answer .contents .cover-slide:hover span {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+/*# sourceMappingURL=answer.css.map */
