@@ -5,13 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>演習｜色々なボタンのスタイル</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Raleway:ital@1&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/base_style.css" />
-    <link rel="stylesheet" href="css/answer/answer.css" />
-    <link rel="stylesheet" href="css/try.css" />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Raleway:ital@1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/css/reset.min.css" />
+    <link rel="stylesheet" href="styles/css/style.css" />
   </head>
   <body>
     <div class="container__outer">
@@ -19,7 +15,7 @@
         <div class="try">
           <div class="inner-header">
             <h2 class="title">Let's Try!!</h2>
-            <p><b>try.css</b>を編集してサンプルに近づけよう！</p>
+            <p class="sub-title">try.scssを編集してサンプルに近づけよう！</p>
           </div>
           <div class="contents">
             <button class="button float">Button_1</button>
@@ -40,7 +36,7 @@
         <div class="answer">
           <div class="inner-header">
             <h2 class="title">Sample</h2>
-            <p><b>answer.css</b>の内容が適応されています</p>
+            <p class="sub-title">answer.cssの内容が適応されています</p>
           </div>
           <div class="contents">
             <button class="button float">Button_1</button>
@@ -52,10 +48,19 @@
               <p>Challenge!!</p>
               <div>
                 <span class="hint">ヒント</span>
-                <span class="hint-text">ある要素が隠れています<br/>hoverすると...??</span>
+                <span class="hint-text">ある要素が隠れています<br/>hoverすると左から現れます</span>
               </div>
               <button class="button cover-slide"><span></span>Button_6</button>
             </div>
+          </div>
+        </div>
+        <div class="description">
+          <div class="description__wrapper">
+            <h3 class="description__title">Sassで書いてみよう！</h3>
+            <p>画面右側にはanswer.cssが適応されている状態<br>左側にはtry.cssが適応されている状態です。</p>
+            <p>Sample(右側)の見た目を参考にしながら<br>try.scssを編集して、見た目をSampleに<br>近づけてみましょう。</p>
+            <p>各ボタン、カーソルホバーで<br>それぞれ異なった挙動をします。</p>
+            <p>まずはなるべくanswer.scssを見ずに、<br>ググったりしながら挑戦してみてください！</p>
           </div>
         </div>
       </main>

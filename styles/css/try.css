@@ -1,4 +1,10 @@
-.try .button {
+.try {
+  width: 100%;
+  text-align: center;
+  margin: 10px auto 20px;
+}
+
+.try .contents .button {
   display: inline-block;
   padding: 15px 40px;
   margin-bottom: 30px;
@@ -8,17 +14,4 @@
   background-color: white;
   font-weight: 100;
 }
-
-
-/* ここにスタイルを記述してみよう！ */
-/* bbutton_1 */
-
-/* button_2 */
-
-/* button_3 */
-
-/* button_4 */
-
-/* button_5 */
-
-/* button_6 */
+/*# sourceMappingURL=try.css.map */
